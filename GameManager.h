@@ -19,6 +19,7 @@ public:
     void render();
     void levelComplete();
     void powerupEffect(POWERUPS pu, float t);
+    void resetGame();
 
     Paddle* getPaddle() const;
     BrickManager* getBrickManager() const;

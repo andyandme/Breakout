@@ -11,6 +11,7 @@ public:
     void createBricks(int rows, int cols, float brickWidth, float brickHeight, float spacing);
     void render();
     int checkCollision(sf::CircleShape& ball, sf::Vector2f& direction);
+    void clearBricks();
 
 private:
     std::vector<Brick> _bricks;

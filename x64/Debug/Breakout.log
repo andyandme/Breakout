@@ -1,19 +1,2 @@
-﻿  Ball.cpp
-  Brick.cpp
-  BrickManager.cpp
-  GameManager.cpp
-  main.cpp
-  MessagingSystem.cpp
-  Paddle.cpp
-  PowerupBase.cpp
-C:\Users\andre\OneDrive\Desktop\University Work\Year 4\CMP424-Professional_Development\Week-5\Breakout\PowerupBase.cpp(15,20): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-  PowerupBigPaddle.cpp
-  PowerupFastBall.cpp
-  PowerupFireBall.cpp
-  PowerupManager.cpp
-C:\Users\andre\OneDrive\Desktop\University Work\Year 4\CMP424-Professional_Development\Week-5\Breakout\PowerupManager.cpp(99,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
-  PowerupSlowBall.cpp
-  PowerupSmallPaddle.cpp
-  UI.cpp
-  Generating Code...
+﻿  GameManager.cpp
   Breakout.vcxproj -> C:\Users\andre\OneDrive\Desktop\University Work\Year 4\CMP424-Professional_Development\Week-5\x64\Debug\Breakout.exe
