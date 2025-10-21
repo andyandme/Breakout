@@ -1,2 +1,3 @@
-﻿  GameManager.cpp
+﻿  PowerupManager.cpp
+C:\Users\andre\OneDrive\Desktop\University Work\Year 4\CMP424-Professional_Development\Week-5\Breakout\PowerupManager.cpp(113,26): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
   Breakout.vcxproj -> C:\Users\andre\OneDrive\Desktop\University Work\Year 4\CMP424-Professional_Development\Week-5\x64\Debug\Breakout.exe

@@ -12,8 +12,8 @@ PowerupBase::PowerupBase(sf::RenderWindow* window, Paddle* paddle, Ball* ball)
     _ball = ball;
 
     // Initial position and direction with some variability
-    float initialX = rand() % window->getSize().x * 0.9 + window->getSize().x * 0.05;
-    _sprite.setPosition(initialX, 5);
+    //float initialX = rand() % window->getSize().x * 0.9 + window->getSize().x * 0.05;
+    //_sprite.setPosition(initialX, 5);
     _direction = { 0.0f, FLOAT_DOWN_SPEED };
 
 }
@@ -52,6 +52,11 @@ void PowerupBase::update(float dt)
 void PowerupBase::render()
 {
     _window->draw(_sprite);
+}
+
+void PowerupBase::setPosition(const sf::Vector2f& pos)
+{
+    _sprite.setPosition(pos);
 }
 
 bool PowerupBase::checkCollisionWithPaddle()

@@ -46,6 +46,17 @@ int BrickManager::checkCollision(sf::CircleShape& ball, sf::Vector2f& direction)
             // unless it's horizontal (collision from side)
             collisionResponse = 1;
 
+        sf::Vector2f dropPos(
+            brickBounds.left + brickBounds.width * 0.5f - POWERUP_RADIUS,
+            brickBounds.top + brickBounds.height * 0.5f - POWERUP_RADIUS);
+        
+        float roll = static_cast<float>(rand()) / static_cast<float>(RAND_MAX);
+        if (roll < POWERUP_DROP_PROBABILITY)
+        {
+            _gameManager->getPowerupManager()->spawnPowerup(dropPos);
+        }
+
+
         // Mark the brick as destroyed (for simplicity, let's just remove it from rendering)
         // In a complete implementation, you would set an _isDestroyed flag or remove it from the vector
         brick = _bricks.back();

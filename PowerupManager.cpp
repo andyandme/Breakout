@@ -54,29 +54,43 @@ void PowerupManager::render()
     }
 }
 
-void PowerupManager::spawnPowerup()
+void PowerupManager::spawnPowerup(const sf::Vector2f& pos)
 {
 
     // TODO finish this.
+
+    PowerupBase* p = nullptr;
+
     switch (rand() % 5)
     {
     case 0:
-        _powerups.push_back(new PowerupBigPaddle(_window, _paddle, _ball));
+        //_powerups.push_back(new PowerupBigPaddle(_window, _paddle, _ball));
+        p = new PowerupBigPaddle(_window, _paddle, _ball);
         break;
     case 1:
-        _powerups.push_back(new PowerupSlowBall(_window, _paddle, _ball));
+        //_powerups.push_back(new PowerupSlowBall(_window, _paddle, _ball));
+        p = new PowerupSlowBall(_window, _paddle, _ball);
         break;
     case 2:
-        _powerups.push_back(new PowerupFastBall(_window, _paddle, _ball));
+        //_powerups.push_back(new PowerupFastBall(_window, _paddle, _ball));
+        p = new PowerupFastBall(_window, _paddle, _ball);
         break;
     case 3:
-        _powerups.push_back(new PowerupSmallPaddle(_window, _paddle, _ball));
+        //_powerups.push_back(new PowerupSmallPaddle(_window, _paddle, _ball));
+        p = new PowerupSmallPaddle(_window, _paddle, _ball);
         break;
     case 4:
-        _powerups.push_back(new PowerupFireBall(_window, _paddle, _ball));
+        //_powerups.push_back(new PowerupFireBall(_window, _paddle, _ball));
+        p = new PowerupFireBall(_window, _paddle, _ball);
         break;
     case 5:
        break;
+    }
+    if (p)
+    {
+
+        p->setPosition(pos);
+        _powerups.push_back(p);
     }
 
 }

@@ -36,6 +36,7 @@ constexpr int BRICK_COLUMNS = 10;
 constexpr float POWERUP_RADIUS = 15.0f;
 constexpr float POWERUP_SPEED = 150.0f;
 constexpr int POWERUP_SPAWN_ROLL_MAX = 700;
+constexpr float POWERUP_DROP_PROBABILITY = 0.15f;
 
 // UI settings
 constexpr float UI_LIFE_RADIUS = 15.0f;

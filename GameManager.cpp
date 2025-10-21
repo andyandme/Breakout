@@ -123,11 +123,11 @@ void GameManager::update(float dt)
     _time += dt;
 
 
-    if (_time > _timeLastPowerupSpawned + POWERUP_FREQUENCY && (rand()% POWERUP_SPAWN_ROLL_MAX == 0))      // TODO parameterise <== Complete
-    {
-        _powerupManager->spawnPowerup();
-        _timeLastPowerupSpawned = _time;
-    }
+    //if (_time > _timeLastPowerupSpawned + POWERUP_FREQUENCY && (rand()% POWERUP_SPAWN_ROLL_MAX == 0))      // TODO parameterise <== Complete
+    //{
+    //    _powerupManager->spawnPowerup();
+    //    _timeLastPowerupSpawned = _time;
+    //}
 
     // move paddle
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) _paddle->moveRight(dt);
