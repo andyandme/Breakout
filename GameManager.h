@@ -18,7 +18,7 @@ public:
     void loseLife();
     void render();
     void levelComplete();
-    void powerupEffect(POWERUPS pu, float t);
+    //REMOVED Powerup Effect Unused
     void resetGame();
 
     Paddle* getPaddle() const;
@@ -50,4 +50,14 @@ private:
 
     static constexpr float PAUSE_TIME_BUFFER = 0.5f;
     static constexpr float POWERUP_FREQUENCY = 7.5f;    // time between minimum powerup spawn
+
+    void startScreenShake(float duration, float magnitude);
+
+    sf::View _baseView;
+    sf::View _currentView;
+    bool _isShaking = false;
+    float _shakeTimer = 0.f;
+    float _shakeDuration = 0.f;
+    float _shakeMagnitude = 0.f;
+
 };
